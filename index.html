@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kalkulator Dek — Versi Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36'><rect rx='8' ry='8' width='36' height='36' fill='%23ff8a00'/><text x='50%' y='58%' font-size='18' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'>D</text></svg>" alt="logo" class="logo">
+        <div>
+          <h1>Kalkulator Dek</h1>
+          <p class="sub">Bikin, pencet, jalan semua tombol ✅</p>
+        </div>
+      </div>
+      <div class="decor">● ● ●</div>
+    </header>
+
+    <section class="display-area">
+      <div id="memory" class="memory"> </div>
+      <div id="display" class="display">0</div>
+    </section>
+
+    <section class="pad">
+      <!-- baris tombol -->
+      <div class="row">
+        <button class="btn func" data-action="clear">AC</button>
+        <button class="btn func" data-action="percent">%</button>
+        <button class="btn func" data-action="back">⌫</button>
+        <button class="btn op" data-value="÷">÷</button>
+      </div>
+
+      <div class="row">
+        <button class="btn num" data-value="7">7</button>
+        <button class="btn num" data-value="8">8</button>
+        <button class="btn num" data-value="9">9</button>
+        <button class="btn op" data-value="×">×</button>
+      </div>
+
+      <div class="row">
+        <button class="btn num" data-value="4">4</button>
+        <button class="btn num" data-value="5">5</button>
+        <button class="btn num" data-value="6">6</button>
+        <button class="btn op" data-value="-">−</button>
+      </div>
+
+      <div class="row">
+        <button class="btn num" data-value="1">1</button>
+        <button class="btn num" data-value="2">2</button>
+        <button class="btn num" data-value="3">3</button>
+        <button class="btn op" data-value="+">+</button>
+      </div>
+
+      <div class="row">
+        <button class="btn num wide" data-value="00">00</button>
+        <button class="btn num" data-value="0">0</button>
+        <button class="btn num" data-value=",">,</button>
+        <button class="btn equals" data-action="equals">=</button>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <small>Desain: gelap, tombol bulat, efek 3D ringan — buat belajar & pakai.</small>
+    </footer>
+  </main>
+
+  <script src="index.js"></script>
+  <script src="script.js"></script>
+</body>
+        </html>
